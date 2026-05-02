@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install -y zsh
+sudo apt install -y zsh git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sed -i 's/plugins=(git)/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/' ~/.zshrc
 echo 'HISTFILE="$HOME/.zsh_history"' >> ~/.zshrc
